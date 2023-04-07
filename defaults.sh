@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # list of default settings to change how macOS functions
 
 # change default screenshot name

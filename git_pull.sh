@@ -1,4 +1,5 @@
 #!/bin/bash
+
 # this script will iterate through the git repos and update them
 
 
