@@ -1,0 +1,13 @@
+#!/bin/bash
+# make a daily backup of the Documents directory
+cd ~
+
+tar -czvf backup.tar.gz Documents/
+echo "cron job status: backup.tar.gz CREATED..."
+sleep 5
+
+# move the backup .tar.gz to the Backups directory
+mv backup.tar.gz ~/Backup/
+echo "cron job status: backup.tar.gz MOVED at $now"
+sleep 2
+echo "Next backup in 24 hours."
