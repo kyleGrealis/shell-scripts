@@ -5,5 +5,14 @@
 
 find ~/repos -maxdepth 1 -mindepth 1 -type d | while read dir; do
   echo "$dir"
-  cd $dir && git pull
+  echo
+  cd $dir
+  git status
+  echo && echo
+  git pull
+  echo && echo && echo
 done
+
+
+echo "All git repos updated"
+
