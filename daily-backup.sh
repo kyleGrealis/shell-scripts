@@ -1,13 +1,17 @@
-#!/bin/bash
+c#!/bin/bash
 
-echo "Daily backup: INITIATED!"
+echo "Daily personal backup: INITIATED!"
 echo
+
+# make a daily backup of my personal directory
+tar -czf /Users/3nc0d3d_/Documents/backup.tar.gz /Users/3nc0d3d_/teek/
+echo "Daily file backup: COMPLETE!"
 echo
-# make a daily backup of the Documents directory
-tar -czf /Users/3nc0d3d_/Backup/backup.tar.gz /Users/3nc0d3d_/teek/
-echo "Daily backup: COMPLETE!"
+
+
+echo "Repo backup: INITIATED!"
 echo
-echo "Moving a copy to iCloud Documents..."
-cp /Users/3nc0d3d_/Backup/backup.tar.gz /Users/3nc0d3d_/Documents/
+tar -czf /Users/3nc0d3d_/Documents/repos-bu.tar.gz /Users/3nc0d3d_/repos/
+echo "Daily repo backup: COMPLETE!"
 echo
 echo "Next backup in 24 hours."
