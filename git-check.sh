@@ -10,7 +10,6 @@ for dir in ~/repos/* ; do
 		echo "------------------------------------------------------------------------------"
 		echo -e "Currently checking $dir\n"
   		git status
-		git fetch
 	sleep 0.2
 	else
 		continue
