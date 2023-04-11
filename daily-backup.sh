@@ -1,4 +1,4 @@
-c#!/bin/bash
+#!/bin/bash
 
 echo "Daily personal backup: INITIATED!"
 echo
