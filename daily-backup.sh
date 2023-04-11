@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# to be run as a cron job
+
 echo "Daily personal backup: INITIATED!"
 echo
 
