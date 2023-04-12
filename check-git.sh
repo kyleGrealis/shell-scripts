@@ -25,6 +25,8 @@ for dir in ~/repos/* ; do
 		continue
 	fi
 done
+
+
 echo "=============================================================================="
 echo -e "${bgreen}COMPLETED${nc}: git repo status check\n"
 
