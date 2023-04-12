@@ -1,13 +1,8 @@
 #!/bin/bash
 
-<<<<<<< HEAD
 # to be run as a cron job
 
-echo "Daily personal backup: INITIATED!"
-echo
-=======
 echo -e "Personal backup: INITIATED!\n"
->>>>>>> e193792 (needs improvements)
 
 # make a daily backup of my personal directory
 tar -czf ~/Documents/backup.tar.gz ~/teek/ 2> /dev/null
@@ -21,6 +16,7 @@ fi
 sleep 2
 
 echo -e "Repo backup: INITIATED!\n"
+
 
 # make backup of git repositories
 tar -czf ~/Documents/repos-bu.tar.gz ~/repos/ 2> /dev/null
