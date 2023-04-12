@@ -1,20 +1,30 @@
 #!/bin/bash
 
+echo "INITIATING: git repo status check"
+sleep 1.5
 
-#find ~/repos -maxdepth 1 -mindepth 1 -type d | while read dir; do
 for dir in ~/repos/* ; do
-#cd $dir
 	if [[ -d $dir/.git ]]
 	then
 		cd $dir
-		echo "------------------------------------------------------------------------------"
-		echo -e "Currently checking $dir\n"
-  		git status
+		# echo -e "Currently checking $dir\n"
+  	status=$(git status | grep -cE "modified|Untracked|'git add'")
+		if
+		  [[ $status -ge 1 ]]
+		    then
+	        echo "------------------------------------------------------------------------------"
+		      echo "${bred} $dir has changes! ${nc}"
+	        echo "------------------------------------------------------------------------------"
+	        sleep 0.5
+	        git status
+		else
+		  continue
+		fi
 	sleep 0.2
 	else
 		continue
 	fi
 done
 echo "=============================================================================="
-echo -e "\n\nAll git repos updated"
+echo -e "COMPLETED: git repo status check\n"
 
