@@ -1,0 +1,23 @@
+Mary had a little lamb,\n
+its fleece was white as snow,\n
+and everywhere that Mary went,\n
+the lamb was sure to go.\n
+A few more lines to confuse things:\n
+Marylamb had a little.\n
+This is a test.  This is only a test.\n
+Mary was married.  A lamb was nearby.\n
+Mary, a little lamb, and my grocer's freezer...\n
+Mary a lamb.\n
+Marry a lamb.\n
+Mary had a lamb looked like a lamb.\n
+I want chocolate for Valentine's day.\n
+This line contains a slash (/).\n
+This line contains a backslash (\).\n
+This line contains brackets ([]).\n
+Why is mary lowercase?\n
+What about Mary, Mary, and Mary?\n
+const people fox\n
+constant turtles bear\n
+constellation Libra\n
+How about 9 * 9?\n
+The quick brown fox jumped over the lazy dog.\n
