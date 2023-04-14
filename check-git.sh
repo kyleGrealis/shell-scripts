@@ -7,7 +7,6 @@ for dir in ~/repos/* ; do
 	if [[ -d $dir/.git ]]
 	then
 		cd $dir
-		# echo -e "Currently checking $dir\n"
   	status=$(git status | grep -cE "modified|Untracked|'add'|'rebas.*'|'rest.*'")
 		if
 		  [[ $status -ge 1 ]]
