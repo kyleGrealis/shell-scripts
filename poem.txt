@@ -1,23 +1,23 @@
-Mary had a little lamb,\n
-its fleece was white as snow,\n
-and everywhere that Mary went,\n
-the lamb was sure to go.\n
-A few more lines to confuse things:\n
-Marylamb had a little.\n
-This is a test.  This is only a test.\n
-Mary was married.  A lamb was nearby.\n
-Mary, a little lamb, and my grocer's freezer...\n
-Mary a lamb.\n
-Marry a lamb.\n
-Mary had a lamb looked like a lamb.\n
-I want chocolate for Valentine's day.\n
-This line contains a slash (/).\n
-This line contains a backslash (\).\n
-This line contains brackets ([]).\n
-Why is mary lowercase?\n
-What about Mary, Mary, and Mary?\n
-const people fox\n
-constant turtles bear\n
-constellation Libra\n
-How about 9 * 9?\n
-The quick brown fox jumped over the lazy dog.\n
+Mary had a little lamb,
+its fleece was white as snow,
+and everywhere that Mary went,
+the lamb was sure to go.
+A few more lines to confuse things:
+Marylamb had a little.
+This is a test.  This is only a test.
+Mary was married.  A lamb was nearby.
+Mary, a little lamb, and my grocer's freezer...
+Mary a lamb.
+Marry a lamb.
+Mary had a lamb looked like a lamb.
+I want chocolate for Valentine's day.
+This line contains a slash (/).
+This line contains a backslash (\).
+This line contains brackets ([]).
+Why is mary lowercase?
+What about Mary, Mary, and Mary?
+const people fox
+constant turtles bear
+constellation Libra
+How about 9 * 9?
+The quick brown fox jumped over the lazy dog.
