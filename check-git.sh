@@ -8,7 +8,7 @@ for dir in ~/repos/* ; do
 	then
 		cd $dir
 		# echo -e "Currently checking $dir\n"
-  	status=$(git status | grep -cE "modified|Untracked|'git add'|'while rebasing branch'")
+  	status=$(git status | grep -cE "modified|Untracked|'add'|'rebas.*'|'rest.*'")
 		if
 		  [[ $status -ge 1 ]]
 		    then
