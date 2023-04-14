@@ -18,4 +18,3 @@ defaults write com.apple.screencapture location ~/Screenshots
 
 # don't create the .DS_Store files
 defaults write com.apple.desktopservices DSDontWriteNetworkStores true
-
