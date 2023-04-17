@@ -2,7 +2,8 @@
 
 # make a daily backup of my personal directory
 echo -e "Personal backup: ${byellow}INITIATED!${nc}"
-tar -czf ~/Documents/backup.tar.gz ~/teek/ 2> /dev/null
+# tar -czf ~/Documents/backup.tar.gz ~/teek/ 2> /dev/null
+tar -czf ~/Library/Mobile\ Documents/com~apple~CloudDocs/backups/backup.tar.gz ~/teek/ 2> /dev/null
 if [[ $? -eq 0 ]]
   then
     echo -e "Personal folder backup: ${bgreen}COMPLETE!${nc}\n"
@@ -14,7 +15,8 @@ sleep 2
 
 # make backup of git repositories
 echo -e "Repo backup: ${byellow}INITIATED!${nc}"
-tar -czf ~/Documents/repos-bu.tar.gz ~/repos/ 2> /dev/null
+# tar -czf ~/Documents/repos-bu.tar.gz ~/repos/ 2> /dev/null
+tar -czf ~/Library/Mobile\ Documents/com~apple~CloudDocs/backups/repos-bu.tar.gz ~/repos/ 2> /dev/null
 if [[ $? -eq 0 ]]
   then
     echo -e "Repo backup: ${bgreen}COMPLETE!${nc}\n"
