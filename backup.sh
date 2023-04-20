@@ -23,6 +23,4 @@ if [[ $? -eq 0 ]]
   else
     echo -e "Repo backup: ${bred}FAILED!!${nc}\n"
 fi
-sleep 2
 
-echo "Be sure to backup daily."
