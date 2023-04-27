@@ -1,20 +1,26 @@
 #!/bin/bash
 
-printf "\n%s: git repo status check\n" "${byellow}INITIATING${nc}"
-sleep 1
+echo -e "\n${byellow}INITIATING${nc}: git repo status check"
+sleep 1.5
 
 for dir in ~/repos/* ; do
 	if [[ -d $dir/.git ]]; then
-        status=$(git status --porcelain | grep -cE "^[MADRCU]")
-		if [[ $status -ge 1 ]]; then
-	        printf "------------------------------------------------------------------------------\n"
-		    printf "%s %s %s\n" "${bred}" "$dir" "${byellow}has changes!${nc}"
-	        printf "------------------------------------------------------------------------------\n"
+		cd $dir
+  	status=$(git status --porcelain | wc -c)
+		if
+		  [[ $status -gt 0 ]]; then
+	        echo "------------------------------------------------------------------------------"
+		      echo -e "${bred} $dir ${byellow}has changes! ${nc}"
+	        echo "------------------------------------------------------------------------------"
 	        sleep 0.5
-	        git status
+	        git status --porcelain
 		fi
+	sleep 0.2
 	fi
 done
 
-printf "==============================================================================\n"
-printf "%s: git repo status check\n\n" "${bgreen}COMPLETED${nc}"
+
+echo "=============================================================================="
+echo -e "${bgreen}COMPLETED${nc}: git repo status check\n"
+
+
