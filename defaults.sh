@@ -21,3 +21,4 @@ defaults write com.apple.desktopservices DSDontWriteNetworkStores true
 
 # macOS dock effects for faster show/hide
 defaults write com.apple.dock autohide-delay -float 0; defaults write com.apple.dock autohide-time-modifier -int 0; killall Dock
+
