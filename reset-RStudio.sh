@@ -3,11 +3,11 @@
 # this program will completely reset RStudio
 
 # remove the desktop directory (internal state)
-rm -rf ~/.local/share/rstudio
+#rm -rf ~/.local/share/rstudio
 
 # reset configuration files
-rm -rf .config/rstudio/
+#rm -rf .config/rstudio/
 
 # reset other preferences
-defaults delete com.rstudio.desktop
+#defaults delete com.rstudio.desktop
 
