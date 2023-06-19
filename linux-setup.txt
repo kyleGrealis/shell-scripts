@@ -1,0 +1,52 @@
+    1  06-19 16:22:46  ls
+    2  06-19 16:22:46  bash ./firmware.sh 
+    3  06-19 16:22:46  sudo snap install firefox slack vlc spotify
+    4  06-19 16:22:46  wget https://raw.githubusercontent.com/denysdovhan/gnome-terminal-one/master/one-dark.sh && . one-dark.sh
+    5  06-19 16:25:12  sudo rm -r /usr/src/apple-bce*
+    6  06-19 16:25:15  sudo rm -r /usr/src/apple-ibridge*
+    7  06-19 16:25:15  sudo rm -r /var/lib/dkms/apple-bce
+    8  06-19 16:25:15  sudo rm -r /var/lib/dkms/apple-ibridge
+    9  06-19 16:25:28  curl -s --compressed "https://adityagarg8.github.io/t2-ubuntu-repo/KEY.gpg" | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/t2-ubuntu-repo.gpg >/dev/null
+   10  06-19 16:25:28  sudo curl -s --compressed -o /etc/apt/sources.list.d/t2.list "https://adityagarg8.github.io/t2-ubuntu-repo/t2.list"
+   11  06-19 16:25:28  sudo apt update
+   12  06-19 16:25:54  sudo apt install t2-kernel-script
+   13  06-19 16:26:03  sudo apt update
+   14  06-19 16:26:11  sudo apt upgrade
+   15  06-19 16:28:26  udo journalctl -k --grep=brcmfmac
+   16  06-19 16:28:32  sudo journalctl -k --grep=brcmfmac
+   17  06-19 16:33:19  sed -n "s/.*\(AppleT2.*\) -.*/\1/p" /proc/asound/cards
+   18  06-19 16:33:38  sudo git clone https://github.com/kekrby/t2-better-audio.git /tmp/t2-better-audio
+   19  06-19 16:33:49  cd /tmp/t2-better-audio
+   20  06-19 16:33:54  ./install.sh 
+   21  06-19 16:34:08  cd && sudo rm -r /tmp/t2-better-audio/
+   22  06-19 16:38:11  sudo add-apt-repository ppa:pipewire-debian/pipewire-upstream
+   23  06-19 16:38:43  sudo apt install pipewire pipewire-audio-client-libraries
+   24  06-19 16:39:52  sudo apt install gstreamer1.0-pipewire libpipewire-0.3-{0,dev,modules} libspa-0.2-{bluetooth,dev,jack,modules} pipewire{,-{audio-client-libraries,pulse,media-session,bin,locales,tests}}
+   25  06-19 16:41:11  systemctl --user daemon-reload
+   26  06-19 16:42:08  sudo apt install pipewire pipewire-audio-client-libraries libpipewire-0.3-modules libspa-0.2-{bluetooth,jack,modules} pipewire{,-{audio-client-libraries,pulse,bin,tests}}
+   27  06-19 16:42:13  sudo apt update
+   28  06-19 16:42:23  sudo apt -y upgrade
+   29  06-19 16:46:01  sudo snap install timeshift
+   30  06-19 16:46:11  sudo apt install timeshift
+   31  06-19 16:46:32  history
+   32  06-19 16:46:53  history >> history.txt
+   33  06-19 16:46:55  ls
+   34  06-19 16:47:01  cat history.txt 
+   35  06-19 16:47:42  git config --global init.defaultBranch main
+   36  06-19 16:47:53  git config --global user.name 'Kyle Grealis'
+   37  06-19 16:48:12  git config --global user.email 'kyleGrealis@icloud.com'
+   38  06-19 16:48:49  ssh-keygen -t ed25519 -C 'mitterLnux'
+   39  06-19 16:48:57  sudo apt install xclip
+   40  06-19 16:49:26  xclip -sel clip < ~/.ssh/id_ed25519.pub
+   41  06-19 16:50:25  mkdir repos/
+   42  06-19 16:50:27  cd repos/
+   43  06-19 16:50:34  git clone git@github.com:kyleGrealis/dot-files.git
+   44  06-19 16:50:53  git clone git@github.com:kyleGrealis/shiny-projects.git
+   45  06-19 16:51:01  git clone git@github.com:kyleGrealis/r-accessories.git
+   46  06-19 16:51:26  git clone git@github.com:kyleGrealis/shell-scripts.git
+   47  06-19 16:51:33  cd 
+   48  06-19 16:51:51  cp repos/dot-files/linux-aliases.txt ~/.bash_aliases
+   49  06-19 16:52:14  cp repos/dot-files/bashrc_modified.txt ~/.bashrc
+   50  06-19 16:52:20  source .bashrc 
+   51  06-19 16:52:22  restart
+   52  06-19 16:52:44  history > history.txt 
